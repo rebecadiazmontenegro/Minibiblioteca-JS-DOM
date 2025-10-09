@@ -2,7 +2,7 @@ import books from "./books.js"
 
 // ------- Fase 1: Utilizar métodos de manejo del DOM ------- //
 
-/*
+
 const primerosLibros = document.getElementById("primerosLibros");
 const tarjetas = document.createElement("div");
 const atributoTarjetas = document.createAttribute("class");
@@ -54,16 +54,16 @@ for(let i = 0; i < books.length; i++) {
     tarjeta.appendChild(pYear);
     tarjetas.appendChild(tarjeta);
 }
-*/
+
 
 // ------- Fase 2: Utilizar template string ------- //
 
-const primerosLibros = document.getElementById("primerosLibros");
-const tarjetas = document.createElement("div");
-const atributoTarjetas = document.createAttribute("class");
-atributoTarjetas.value = "tarjetas"
-tarjetas.setAttributeNode(atributoTarjetas);
-primerosLibros.appendChild(tarjetas);
+const primerosLibros2 = document.getElementById("primerosLibros");
+const tarjetas2 = document.createElement("div");
+const atributoTarjetas2 = document.createAttribute("class");
+atributoTarjetas2.value = "tarjetas"
+tarjetas2.setAttributeNode(atributoTarjetas2);
+primerosLibros2.appendChild(tarjetas2);
 
 
 let contenido = "";
@@ -82,4 +82,4 @@ for (let i = 0; i < books.length; i++) {
     </div>
   `;
 }
-tarjetas.innerHTML = contenido;
+tarjetas2.innerHTML = contenido;
